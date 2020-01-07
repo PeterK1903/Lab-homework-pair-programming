@@ -1,5 +1,3 @@
-
-
   def return_10()
      return 10
   end
@@ -24,9 +22,8 @@
     return (string).length
   end
 
-  def join_string()
-    str = "Peie"
-    str.concat("trli")
+  def join_string(string ="abc", string_1 = "de")
+    return string + string_1
   end
 
   def add_string_as_number(number_1, number_2)
@@ -72,16 +69,17 @@ end
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  def volume_of_cube(side_of_cube)
-    return side_of_cube * 3
-  end
+  def volume_of_cube(s)
+    return (s ** 3)
+end
+
 
   #Given the radius of a sphere calculate the volume
-  def volume_of_sphere(radius)
-    return (4/3) * (3.14) * (radius**3)
+  def volume_of_sphere(sphere_r)
+    return (4/3) * (3.14) * (sphere_r ** 3)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def fahrenheit_to_celsius(fahrenheit)
-    return (fahrenheit - 32) * (5/9)
+    return fahrenheit.to_i - 32 * 5.0 / 9.0
   end
