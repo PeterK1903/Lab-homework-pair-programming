@@ -30,40 +30,17 @@
     return number_1.to_i + number_2.to_i
   end
 
-  def number_to_full_month_name_jan_long(number)
-    if number == 1
-    return "January"
-  end
-end
-
-  def number_to_full_month_name_mar_long(number)
-    if number == 3
-    return "March"
-  end
+  def number_to_full_month_name_long(number)
+  return Date::MONTHNAMES[number]
   end
 
-  def number_to_full_month_name_sep_long(number)
-    if number == 9
-    return "September"
-  end
-  end
+  p number_to_full_month_name_long(2)
 
-  def number_to_short_month_name_jan_short(number)
-    if number == 1
-    return "Jan"
-  end
-  end
 
-  def number_to_short_month_name_apr_short(number)
-    if number == 4
-    return "Apr"
+  def number_to_short_month_name_short(number)
+    return  Date::ABBR_MONTHNAMES[number]
   end
-  end
-
-  def number_to_short_month_name_oct_short(number)
-    if number == 10
-    return "Oct"
-  end
+  p number_to_short_month_name_short(2)
   end
 
   #Further
